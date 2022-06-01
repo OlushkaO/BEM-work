@@ -1,0 +1,46 @@
+.clients {
+    padding: 94px 0;
+}
+
+.clients__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 50px;
+}
+
+.clients__list {
+    display: flex;
+    margin: -15px;
+}
+.clients__item {
+    margin: 15px;
+    width: calc((100% - 150px) / 6);
+
+}
+.clients__icon {
+    fill: currentColor;
+}
+.clients__link { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid $icon-color;
+    border-radius: 4px;
+    color: $icon-color;
+    
+    transition: color $transition-duration $transition-timing-function,
+    border-color $transition-duration $transition-timing-function;
+    
+
+    &:hover,
+    &:focus {
+        color: $hover-color;
+        border-color: $hover-color;
+    }
+}
