@@ -1,0 +1,44 @@
+.footer {
+    background-color: $footer-background-color;
+    padding: 60px 0;
+}
+.footer__logo {
+    color: $light-logo-color;
+}
+.logo--position {
+    margin-bottom: 20px;
+}
+
+.address__item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $light-maintext-color;
+    margin-bottom: 9px;
+}
+
+.address__item:last-child {
+    margin-bottom: 0;
+}
+
+.address__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+
+    transition: color $transition-duration $transition-timing-function;
+    
+    &:hover,
+    &:focus {
+            color: $hover-color;
+        }
+}
+
+
+
+
