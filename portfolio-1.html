@@ -4,14 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Портфолио</title>
+    <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -20,43 +15,48 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- head  -->
-    <header class="header">
-      <div class="container header-flex">
-        <nav class="head-nav">
-          <a href="" class="logo" lang="en">
-            Web<span class="header-logo">Studio</span>
+    <!-- HEADER -->
+    <header class="page-header">
+      <div class="container container-flex">
+        <!-- Header- NAVIGATION -->
+        <nav class="navigation">
+          <!-- Header - LOGO -->
+          <a href="" class="logo" lang="en"
+            >Web<span class="page-header__logo">Studio</span>
           </a>
-          <ul class="header-nav-list">
-            <li class="header-nav-item">
-              <a href="./index.html" class="header-nav-link">Студия</a>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="./studio.html" class="navigation__link">Студия</a>
             </li>
-            <li class="header-nav-item">
-              <a href="./portfolio.html" class="header-nav-link active"
+            <li class="navigation__item">
+              <a
+                href="./portfolio-1.html"
+                class="navigation__link navigation__link--active"
                 >Портфолио</a
               >
             </li>
-            <li class="header-nav-item">
-              <a href="" class="header-nav-link">Контакты</a>
+            <li class="navigation__item">
+              <a href="" class="navigation__link">Контакты</a>
             </li>
           </ul>
         </nav>
 
-        <ul class="header-list">
-          <li class="header-list-item">
-            <a href="mailto:info@devstudio.com" class="header-contact"
-              ><svg class="icon-convert" width="16" height="12">
+        <!--Header - CONTACTS -->
+        <ul class="contact">
+          <li class="contact__item">
+            <a href="mailto:info@devstudio.com" class="contact__link">
+              <svg class="contact__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-convert"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="header-list-item">
-            <a href="tel:+380961111111" class="header-contact">
-              <svg class="icon-smartphone" width="10" height="16">
+          <li class="contact__item">
+            <a href="tel:+380961111111" class="contact__link">
+              <svg class="contact__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -66,43 +66,48 @@
       </div>
     </header>
 
-    <!-- main -->
-    <main class="main-portfolio">
+    <!-- MAIN -->
+    <main class="page-portfolio">
       <section class="portfolio">
         <div class="container">
-          <h1 class="portfolio-title">Наши работы</h1>
+          <h1 class="portfolio__title">Наши работы</h1>
           <ul class="filter">
-            <li class="filter-item">
-              <button type="button" class="filter-button active">Все</button>
+            <li class="filter__item">
+              <button
+                type="button"
+                class="filter__button filter__button--active"
+              >
+                Все
+              </button>
             </li>
-            <li class="filter-item">
-              <button type="button" class="filter-button">Веб-сайты</button>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Веб-сайты</button>
             </li>
-            <li class="filter-item">
-              <button type="button" class="filter-button">Приложения</button>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Приложения</button>
             </li>
-            <li class="filter-item">
-              <button type="button" class="filter-button">Дизайн</button>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Дизайн</button>
             </li>
-            <li class="filter-item">
-              <button type="button" class="filter-button">Маркетинг</button>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Маркетинг</button>
             </li>
           </ul>
 
-          <ul class="portrfolio-list">
-            <li class="portfolio-item">
-              <article class="card">
-                <a href="" class="portfolio-link">
-                  <div class="thumb">
+          <ul class="card-set">
+            <li class="card-set__item">
+              <div class="card">
+                <a href="" class="card__link">
+                  <div class="card__thumb">
                     <img
                       src="./images/project-1.jpg"
                       alt="Ноутбук с открытым сайтом, три человека на экране"
                       width="370"
                       height="294"
-                      class="portfolio-img"
+                      class="card__image"
                     />
-                    <div class="portfolio-thumb-overlay">
-                      <p class="portfolio-thumb-overlay-content">
+                    <div class="card-overlay">
+                      <p class="card-overlay__text">
                         Ресурс предлагает комплексные предложения с разным
                         уровнем функционала и сервисов. Все это позволит
                         посетителю получить исчерпывающие сведения о компании
@@ -111,27 +116,27 @@
                     </div>
                   </div>
 
-                  <div class="portfolio-list-context">
-                    <h2 class="portfolio-subtitle">Технокряк</h2>
-                    <p class="portfolio-text">Веб-сайт</p>
+                  <div class="card__content">
+                    <h2 class="card__title">Технокряк</h2>
+                    <p class="card__text">Веб-сайт</p>
                   </div>
                 </a>
-              </article>
+              </div>
             </li>
 
-            <li class="portfolio-item">
-              <article class="card">
-                <a href="" class="portfolio-link">
-                  <div class="thumb">
+            <li class="card-set__item">
+              <div class="card">
+                <a href="" class="card__link">
+                  <div class="card__thumb">
                     <img
                       src="./images/project-2.jpg"
                       alt="Двое мужчин играют в баскетбол, мыжчины в прыжке"
                       width="370"
                       height="294"
-                      class="portfolio-img"
+                      class="card__image"
                     />
-                    <div class="portfolio-thumb-overlay">
-                      <p class="portfolio-thumb-overlay-content">
+                    <div class="card-overlay">
+                      <p class="card-overlay__text">
                         Ресурс предлагает комплексные предложения с разным
                         уровнем функционала и сервисов. Все это позволит
                         посетителю получить исчерпывающие сведения о компании
@@ -139,29 +144,29 @@
                       </p>
                     </div>
                   </div>
-                  <div class="portfolio-list-context">
-                    <h2 class="portfolio-subtitle">
+                  <div class="card__content">
+                    <h2 class="card__title">
                       Постер <span lang="en">New Orlean vs Golden Star</span>
                     </h2>
-                    <p class="portfolio-text">Дизайн</p>
+                    <p class="card__text">Дизайн</p>
                   </div>
                 </a>
-              </article>
+              </div>
             </li>
 
-            <li class="portfolio-item">
-              <article class="card">
-                <a href="" class="portfolio-link">
-                  <div class="thumb">
+            <li class="card-set__item">
+              <div class="card">
+                <a href="" class="card__link">
+                  <div class="card__thumb">
                     <img
                       src="./images/project-3.jpg"
                       alt="Логотип ресторана морепродуктов, логотип в форме рыбы "
                       width="370"
                       height="294"
-                      class="portfolio-img"
+                      class="card__image"
                     />
-                    <div class="portfolio-thumb-overlay">
-                      <p class="portfolio-thumb-overlay-content">
+                    <div class="card-overlay">
+                      <p class="card-overlay__text">
                         Ресурс предлагает комплексные предложения с разным
                         уровнем функционала и сервисов. Все это позволит
                         посетителю получить исчерпывающие сведения о компании
@@ -169,29 +174,29 @@
                       </p>
                     </div>
                   </div>
-                  <div class="portfolio-list-context">
-                    <h2 class="portfolio-subtitle">
+                  <div class="card__content">
+                    <h2 class="card__title">
                       Ресторан <span lang="en">Seafood</span>
                     </h2>
-                    <p class="portfolio-text">Приложение</p>
+                    <p class="card__text">Приложение</p>
                   </div>
                 </a>
-              </article>
+              </div>
             </li>
 
-            <li class="portfolio-item">
-              <article class="card">
-                <a href="" class="portfolio-link">
-                  <div class="thumb">
+            <li class="card-set__item">
+              <div class="card">
+                <a href="" class="card__link">
+                  <div class="card__thumb">
                     <img
                       src="./images/project-4.jpg"
                       alt="Большие накладные чорные наушники "
                       width="370"
                       height="294"
-                      class="portfolio-img"
+                      class="card__image"
                     />
-                    <div class="portfolio-thumb-overlay">
-                      <p class="portfolio-thumb-overlay-content">
+                    <div class="card-overlay">
+                      <p class="card-overlay__text">
                         Ресурс предлагает комплексные предложения с разным
                         уровнем функционала и сервисов. Все это позволит
                         посетителю получить исчерпывающие сведения о компании
@@ -199,29 +204,29 @@
                       </p>
                     </div>
                   </div>
-                  <div class="portfolio-list-context">
-                    <h2 class="portfolio-subtitle">
+                  <div class="card__content">
+                    <h2 class="card__title">
                       Проект <span lang="en">Prime</span>
                     </h2>
-                    <p class="portfolio-text">Маркетинг</p>
+                    <p class="card__text">Маркетинг</p>
                   </div>
                 </a>
-              </article>
+              </div>
             </li>
 
-            <li class="portfolio-item">
-              <article class="card">
-                <a href="" class="portfolio-link">
-                  <div class="thumb">
+            <li class="card-set__item">
+              <div class="card">
+                <a href="" class="card__link">
+                  <div class="card__thumb">
                     <img
                       src="./images/project-5.jpg"
                       alt="Две фирменные закрытые коробочки, белая и персиковая"
                       width="370"
                       height="294"
-                      class="portfolio-img"
+                      class="card__image"
                     />
-                    <div class="portfolio-thumb-overlay">
-                      <p class="portfolio-thumb-overlay-content">
+                    <div class="card-overlay">
+                      <p class="card-overlay__text">
                         Ресурс предлагает комплексные предложения с разным
                         уровнем функционала и сервисов. Все это позволит
                         посетителю получить исчерпывающие сведения о компании
@@ -229,29 +234,29 @@
                       </p>
                     </div>
                   </div>
-                  <div class="portfolio-list-context">
-                    <h2 class="portfolio-subtitle">
+                  <div class="card__content">
+                    <h2 class="card__title">
                       Проект <span lang="en"> Boxes</span>
                     </h2>
-                    <p class="portfolio-text">Приложение</p>
+                    <p class="card__text">Приложение</p>
                   </div>
                 </a>
-              </article>
+              </div>
             </li>
 
-            <li class="portfolio-item">
-              <article class="card">
-                <a href="" class="portfolio-link">
-                  <div class="thumb">
+            <li class="card-set__item">
+              <div class="card">
+                <a href="" class="card__link">
+                  <div class="card__thumb">
                     <img
                       src="./images/project-6.jpg"
                       alt="Темный экран монитора, сайт, текст и изображение карты мира "
                       width="370"
                       height="294"
-                      class="portfolio-img"
+                      class="card__image"
                     />
-                    <div class="portfolio-thumb-overlay">
-                      <p class="portfolio-thumb-overlay-content">
+                    <div class="card-overlay">
+                      <p class="card-overlay__text">
                         Ресурс предлагает комплексные предложения с разным
                         уровнем функционала и сервисов. Все это позволит
                         посетителю получить исчерпывающие сведения о компании
@@ -259,29 +264,29 @@
                       </p>
                     </div>
                   </div>
-                  <div class="portfolio-list-context">
-                    <h2 class="portfolio-subtitle" lang="en">
+                  <div class="card__content">
+                    <h2 class="card__title" lang="en">
                       Inspiration has no Borders
                     </h2>
-                    <p class="portfolio-text">Веб-сайт</p>
+                    <p class="card__text">Веб-сайт</p>
                   </div>
                 </a>
-              </article>
+              </div>
             </li>
 
-            <li class="portfolio-item">
-              <article class="card">
-                <a href="" class="portfolio-link">
-                  <div class="thumb">
+            <li class="card-set__item">
+              <div class="card">
+                <a href="" class="card__link">
+                  <div class="card__thumb">
                     <img
                       src="./images/project-7.jpg"
                       alt="Две страницы из журнала с изображением женщин"
                       width="370"
                       height="294"
-                      class="portfolio-img"
+                      class="card__image"
                     />
-                    <div class="portfolio-thumb-overlay">
-                      <p class="portfolio-thumb-overlay-content">
+                    <div class="card-overlay">
+                      <p class="card-overlay__text">
                         Ресурс предлагает комплексные предложения с разным
                         уровнем функционала и сервисов. Все это позволит
                         посетителю получить исчерпывающие сведения о компании
@@ -289,29 +294,29 @@
                       </p>
                     </div>
                   </div>
-                  <div class="portfolio-list-context">
-                    <h2 class="portfolio-subtitle">
+                  <div class="card__content">
+                    <h2 class="card__title">
                       Издание <span lang="en"> Limited Edition</span>
                     </h2>
-                    <p class="portfolio-text">Дизайн</p>
+                    <p class="card__text">Дизайн</p>
                   </div>
                 </a>
-              </article>
+              </div>
             </li>
 
-            <li class="portfolio-item">
-              <article class="card">
-                <a href="" class="portfolio-link">
-                  <div class="thumb">
+            <li class="card-set__item">
+              <div class="card">
+                <a href="" class="card__link">
+                  <div class="card__thumb">
                     <img
                       src="./images/project-8.jpg"
                       alt="Фирменная этикетка, белая с черными буквами"
                       width="370"
                       height="294"
-                      class="portfolio-img"
+                      class="card__image"
                     />
-                    <div class="portfolio-thumb-overlay">
-                      <p class="portfolio-thumb-overlay-content">
+                    <div class="card-overlay">
+                      <p class="card-overlay__text">
                         Ресурс предлагает комплексные предложения с разным
                         уровнем функционала и сервисов. Все это позволит
                         посетителю получить исчерпывающие сведения о компании
@@ -319,29 +324,29 @@
                       </p>
                     </div>
                   </div>
-                  <div class="portfolio-list-context">
-                    <h2 class="portfolio-subtitle">
+                  <div class="card__content">
+                    <h2 class="card__title">
                       Проект <span lang="en">LAB</span>
                     </h2>
-                    <p class="portfolio-text">Маркетинг</p>
+                    <p class="card__text">Маркетинг</p>
                   </div>
                 </a>
-              </article>
+              </div>
             </li>
 
-            <li class="portfolio-item">
-              <article class="card">
-                <a href="" class="portfolio-link">
-                  <div class="thumb">
+            <li class="card-set__item">
+              <div class="card">
+                <a href="" class="card__link">
+                  <div class="card__thumb">
                     <img
                       src="./images/project-9.jpg"
                       alt="Руки мужчины, работающего за ноутбуков, на ноутбуке открыта страничка с бизнес-сайтом "
                       width="370"
                       height="294"
-                      class="portfolio-img"
+                      class="card__image"
                     />
-                    <div class="portfolio-thumb-overlay">
-                      <p class="portfolio-thumb-overlay-content">
+                    <div class="card-overlay">
+                      <p class="card-overlay__text">
                         Ресурс предлагает комплексные предложения с разным
                         уровнем функционала и сервисов. Все это позволит
                         посетителю получить исчерпывающие сведения о компании
@@ -349,36 +354,35 @@
                       </p>
                     </div>
                   </div>
-                  <div class="portfolio-list-context">
-                    <h2 class="portfolio-subtitle" lang="en">
-                      Growing Business
-                    </h2>
-                    <p class="portfolio-text">Приложение</p>
+                  <div class="card__content">
+                    <h2 class="card__title" lang="en">Growing Business</h2>
+                    <p class="card__text">Приложение</p>
                   </div>
                 </a>
-              </article>
+              </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
-    <!-- footer  -->
+    <!-- FOOTER  -->
+    <!-- footer-address block -->
     <footer class="footer">
-      <div class="container footer-container">
-        <div class="footer-adress">
-          <a class="footer-logo-blue" href="" lang="en">
-            Web<span class="footer-logo">Studio</span></a
+      <div class="container container--flexible">
+        <div class="address-container">
+          <a class="logo logo--position" href="" lang="en">
+            Web<span class="footer__logo">Studio</span></a
           >
-          <address class="adress">
-            <ul class="adress-list">
-              <li class="adress-item">г. Киев, пр-т Леси Украинки, 26</li>
-              <li class="adress-item">
-                <a href="mailto:info@example.com" class="adress-link"
+          <address class="address">
+            <ul class="address__list">
+              <li class="address__item">г. Киев, пр-т Леси Украинки, 26</li>
+              <li class="address__item">
+                <a href="mailto:info@example.com" class="address__link"
                   >info@example.com</a
                 >
               </li>
-              <li class="adress-item">
-                <a href="tel:+380991111111" class="adress-link"
+              <li class="address__item">
+                <a href="tel:+380991111111" class="address__link"
                   >+38 099 111 11 11</a
                 >
               </li>
@@ -386,43 +390,68 @@
           </address>
         </div>
 
+        <!-- footer-socials block -->
         <div class="footer-socials">
-          <h3 class="footer-socials-title">присоединяйтесь</h3>
-          <ul class="footer-socials-list">
-            <li class="footer-socials-item">
-              <a href="" class="footer-social-link">
-                <svg class="footer-icon" width="20" height="20">
+          <p class="footer-socials__title"><strong>присоединяйтесь</strong></p>
+          <ul class="footer-socials__list">
+            <li class="footer-socials__item">
+              <a href="" class="footer-socials__link">
+                <svg class="footer-socials__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="footer-socials-item">
-              <a href="" class="footer-social-link">
-                <svg class="footer-icon" width="20" height="20">
+            <li class="footer-socials__item">
+              <a href="" class="footer-socials__link">
+                <svg class="footer-socials__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="footer-socials-item">
-              <a href="" class="footer-social-link">
-                <svg class="footer-icon" width="20" height="20">
+            <li class="footer-socials__item">
+              <a href="" class="footer-socials__link">
+                <svg class="footer-socials__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="footer-socials-item">
-              <a href="" class="footer-social-link">
-                <svg class="footer-icon" width="20" height="20">
+            <li class="footer-socials__item">
+              <a href="" class="footer-socials__link">
+                <svg class="footer-socials__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
+        <div class="footer-mailing">
+          <p class="footer-mailing__title">
+            <strong> Подпишитесь на рассылку</strong>
+          </p>
+          <div class="footer-mailing__container">
+            <form class="footer-form">
+              <label class="footer-form__field">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                  class="footer-form__input"
+                />
+              </label>
+            </form>
+            <button type="submit" class="button footer-button">
+              <span class="footer-button__text">Подписаться</span>
+              <svg class="footer-button__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

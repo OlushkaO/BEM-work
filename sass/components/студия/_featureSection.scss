@@ -18,19 +18,21 @@
 .feature__list {
     display: flex;
     margin: -15px;
+
 }
 .feature__item {
-    width: calc((100% - 90px) / 4);
+    width: calc((100% - 120px) / 4);
     margin: 15px;
 }
 .feature__frame {
-    width: 270px;
+    width: 100%;
     height: 120px;
     background-color: $secondary-background-color;
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+
     
 }
 .feature__subtitle {
